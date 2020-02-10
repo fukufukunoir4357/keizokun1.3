@@ -1,0 +1,2 @@
+module LFavoritesHelper
+end

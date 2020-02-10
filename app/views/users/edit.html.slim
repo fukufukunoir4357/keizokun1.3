@@ -1,0 +1,18 @@
+.edit_page_area
+  h1
+    | Editing User
+  = render 'form', user: @user
+  
+  
+  -@sites.each do |s|
+    =link_to "#{s.name}",user_s_favorites_path(site_id:s.id, user_id: @user.id),method: :post, class:'btn site_btn'
+  <br>
+  
+  -@languages.each do |l|
+    =link_to "#{l.name}", user_l_favorites_path(language_id: l.id, user_id: @user.id),method: :post, class: 'btn language_btn'
+  
+  <br>
+  
+  = link_to 'Show', @user
+  |  | 
+  = link_to 'Back', users_path

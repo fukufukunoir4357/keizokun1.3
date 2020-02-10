@@ -1,0 +1,5 @@
+h1
+  | Sessions#new
+p
+  | Find me in app/views/sessions/new.html.erb
+|  =form_for(:session, url: login_path) do |f| =f.label :email =f.email_field :email =f.label :password =f.password_field :password =f.submit "Log in" =link_to "新規ユーザー登録はこちら", new_user_path
