@@ -18,3 +18,95 @@
   background-color: #000080;
   margin: 20px;
 }
+
+.text_center {
+  text-align: center;
+}
+
+.login_page_wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('deskPC.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.top_page_wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('nezumiPC.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  position: relative;
+}
+
+.login_title {
+  font-size: 40px;
+}
+
+.page_inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 80%;
+  height: 30rem;
+  text-align: center;
+}
+
+.signin_page_wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('beachPC.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  position: relative;
+}
+
+.user_showpage_wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('beachPC.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  position: relative;
+}
+
+.tread-btns {
+  margin: 20px;
+}
+
+.board_show_wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('panicPC.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+  position: relative;
+}
+
+.input-mysize {
+  width: 50%;
+  height: 100px;
+}
+
+.comment_area {
+  background-color: #99FFFF;
+}

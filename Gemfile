@@ -69,4 +69,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails'
 gem 'slim'
 gem 'html2slim'
-
+gem 'bower-rails'
+gem 'font-awesome-rails'

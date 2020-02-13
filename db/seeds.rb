@@ -5,7 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Site.create(name: 'CodeCamp')
-Site.create(name: 'Udemy')
-Language.create(name: 'PHP')
-Language.create(name: 'javascript')
+Board.create(title: "Ruby_on_Rails", user_id: 1)
+Board.create(title: "HTMLとCSS", user_id: 1)
+Board.create(title: "Javascript" , user_id: 1)

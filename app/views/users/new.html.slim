@@ -1,4 +1,6 @@
-h1
-  | New User
-= render 'form', user: @user
-= link_to 'Back', users_path
+.signin_page_wrapper  
+  .page_inner
+    h1.signin_title
+      | 新規ユーザー登録
+    = render 'form', user: @user
+    = link_to 'Back', users_path, class:"btn btn-primary"

@@ -58,6 +58,7 @@ GEM
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
+    bower-rails (0.12.0)
     builder (3.2.4)
     byebug (11.1.1)
     capybara (3.31.0)
@@ -88,6 +89,8 @@ GEM
     erubi (1.9.0)
     execjs (2.7.0)
     ffi (1.12.2)
+    font-awesome-rails (4.7.0.5)
+      railties (>= 3.2, < 6.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     hpricot (0.8.6)
@@ -233,11 +236,13 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.1.0)
   bootstrap-sass
+  bower-rails
   byebug
   capybara (>= 2.15, < 4.0)
   chart-js-rails
   chromedriver-helper
   coffee-rails (~> 4.2)
+  font-awesome-rails
   html2slim
   jbuilder (~> 2.5)
   jquery-rails

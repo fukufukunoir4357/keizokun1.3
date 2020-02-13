@@ -1,24 +1,32 @@
-p#notice
-  = notice
-p
-  strong
-    | Name:
-  = @user.name
-p
-  strong
-    | Email:
-  = @user.email
-p
-  strong
-    | Age:
-  = @user.age
-p
-  strong
-    | Sex:
-  = @user.sex
-= link_to 'Edit', edit_user_path(@user)
-|  | 
-= link_to 'Back', users_path
-|  |
--if logged_in?
-= link_to 'Logout', logout_path, method: :delete
+.user_showpage_wrapper
+  .page_inner
+    .user_info_area
+      p#notice
+        = notice
+      p
+        strong
+          | Name:
+        = @user.name
+      p
+        strong
+          | Email:
+        = @user.email
+      p
+        strong
+          | Age:
+        = @user.age
+
+    .thread_wrapper
+      h1.tread_title 質問投稿掲示板
+      
+      -@boards.each do |board|
+        =link_to board.title, board_path(board), class:"btn btn-warning tread-btns"
+   
+   
+    .btn_wrapper
+      = link_to 'Edit', edit_user_path(@user), class: "btn btn-success"
+      |  
+      = link_to 'Back', users_path, class: "btn btn-info"
+      |  
+      -if logged_in?
+      = link_to 'Logout', logout_path, method: :delete, class: "btn btn-danger"
