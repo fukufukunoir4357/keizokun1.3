@@ -6,8 +6,9 @@
     = f.submit "投稿する", class:"btn btn-danger"
   
   .comment_area 
+   -require 'uri'
    - @board.comments.each do |comment|
     | >
-    = simple_format comment.content.gsub(/ /, '&nbsp;')
+    = simple_format(text_url_to_link(h(comment.content.gsub(/ /, '&nbsp;').html_safe)), {}, sanitize: false)
     br
   
