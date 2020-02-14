@@ -15,12 +15,13 @@
         strong
           | Age:
         = @user.age
-      
+      p 学習使用サイト
       - @favorite_sites.each do |s|
-       = s.name
+        <button type="button">#{s.name}</button>
       br
+      p 学習中の言語
       - @favorite_languages.each do |l|
-       = l.name
+        <button type="button">#{l.name}</button>
         
 
     .thread_wrapper
