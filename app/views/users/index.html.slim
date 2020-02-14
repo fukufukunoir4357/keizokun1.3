@@ -1,8 +1,14 @@
 .top_page_wrapper.text_center.container
-  
-  h1
-    | KeizoKun
-
-  br
-  = link_to 'ユーザー登録', new_user_path, class:"btn btn-danger"
-  = link_to 'Log in', login_path, class:"btn btn-primary"
+ .page_inner
+    h1.page_title
+      | KeizoKu.navi
+    
+    .site_btn
+    br
+    = link_to 'ユーザー登録', new_user_path, class:"btn btn-danger"
+    = link_to 'Log in', login_path, class:"btn btn-primary"
+    
+ .twitter_wrapper
+   <a class="twitter-timeline" data-width="220" data-height="300" data-theme="light" href="https://twitter.com/f_uku8?ref_src=twsrc%5Etfw">Tweets by f_uku8</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+   <a class="twitter-timeline" data-width="220" data-height="300" href="https://twitter.com/athletics_run?ref_src=twsrc%5Etfw">Tweets by athletics_run</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+   

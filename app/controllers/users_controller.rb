@@ -11,6 +11,8 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @boards = Board.all
+    @favorite_sites = current_user.s_favorite_sites
+    @favorite_languages = current_user.l_favorite_languages
   end
 
   # GET /users/new

@@ -8,6 +8,8 @@ class BoardsController < ApplicationController
     @board = Board.find(params[:id])
     @board = Board.includes(:comments).find(params[:id])
     @comment = Comment.new
+    @user = current_user
+    
     
   end
   

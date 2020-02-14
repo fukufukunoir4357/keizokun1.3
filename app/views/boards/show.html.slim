@@ -4,6 +4,8 @@
     = f.text_area :content, class:"input-mysize"
     br
     = f.submit "投稿する", class:"btn btn-danger"
+    
+    = link_to 'Show', @user, class:"btn btn-success"
   
   .comment_area 
    -require 'uri'

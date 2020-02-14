@@ -6,8 +6,8 @@ class User < ApplicationRecord
   validates :email, presence: true, length: {maximum: 255},format: { with: VALID_EMAIL_REGEX },
   uniqueness: { case_sensitive: false }
   
-  has_many :sfavorites
-  has_many :lfavorites
-  has_many :sfavorite_sites, through: :sfavorites, source: 'site'
-  has_many :lfavorite_languages, through: :lfavorites, source: 'language'
+  has_many :s_favorites
+  has_many :s_favorite_sites, through: :s_favorites, source: 'site'
+  has_many :l_favorites
+  has_many :l_favorite_languages, through: :l_favorites, source: 'language'
 end

@@ -15,6 +15,13 @@
         strong
           | Age:
         = @user.age
+      
+      - @favorite_sites.each do |s|
+       = s.name
+      br
+      - @favorite_languages.each do |l|
+       = l.name
+        
 
     .thread_wrapper
       h1.tread_title 質問投稿掲示板
