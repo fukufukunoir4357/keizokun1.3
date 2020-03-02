@@ -6,15 +6,15 @@
       p
         strong
           | Name:
-        = @user.name
+        = current_user.name
       p
         strong
           | Email:
-        = @user.email
+        = current_user.email
       p
         strong
           | Age:
-        = @user.age
+        = current_user.age
       p 学習使用サイト
       - @favorite_sites.each do |s|
         <button type="button">#{s.name}</button>
@@ -32,7 +32,7 @@
    
    
     .btn_wrapper
-      = link_to 'Edit', edit_user_path(@user), class: "btn btn-success"
+      = link_to 'Edit', edit_user_path(current_user), class: "btn btn-success"
       |  
       = link_to 'Back', users_path, class: "btn btn-info"
       |  
