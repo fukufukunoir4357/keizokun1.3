@@ -3,6 +3,6 @@
   "private": true,
   "dependencies": {
     "admin-lte": "^3.0.2",
-    "chart.js": "^2.7.1"
+    "chart.js": "^2.9.4"
   }
 }
